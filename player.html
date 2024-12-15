@@ -55,12 +55,7 @@
 
 
     <script>
-        // Redirect button functionality
-        const params = new URLSearchParams(window.location.search);
-        const streamUrl = decodeURIComponent(params.get('url'));
-        const channelName = decodeURIComponent(params.get('name'));
         
-
         const redirectButton = document.getElementById('redirectButton');
         redirectButton.addEventListener('click', () => {
             window.location.href = httpUrl;
